@@ -29,7 +29,7 @@ export function ThemeToggle() {
           <Sun className="mr-2" /> Light
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          <Moon className="mr-2" /> Dark
+          <MoonIcon className="mr-2" /> Dark
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
           <LaptopIcon className="mr-2" /> Sistema
