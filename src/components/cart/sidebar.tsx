@@ -1,3 +1,5 @@
+'use client'
+
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { RocketIcon } from "lucide-react"
@@ -6,7 +8,7 @@ import { Separator } from "@/components/ui/separator"
 export const CartSidebar = () => {
     return (
          <Sheet> {/* sidebar */}
-             <SheetTrigger> {/*Trigger funcionalidade de click */}
+             <SheetTrigger asChild  >
                 <Button>
                     <RocketIcon className="mr-2" />
                     <p>Carrinho</p>
@@ -15,6 +17,7 @@ export const CartSidebar = () => {
             <SheetContent>
                 <SheetHeader>
                     <SheetTitle>Carrinho</SheetTitle>
+                    
                     <div className="flex flex-col gap-5 my-3">
                         ...
                     </div>
